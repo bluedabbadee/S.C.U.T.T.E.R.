@@ -1,0 +1,14 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Please login</h1
+<p>If this is your first login via the web interface, just enter your name followed by ID number. eg Ben1</p>
+<form action="{{ url_for('do_admin_login') }}" method="POST">
+	<input name="id" type="text" placeholder="Enter UserID">
+	<br>
+	<input name="psw" type="password" placeholder="Enter Password">
+	<input type="submit">
+</form>
+</body>
+</html>
